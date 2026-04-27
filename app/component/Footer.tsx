@@ -5,9 +5,9 @@ import { HeartPulse } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#050b18] border-t border-white/10 text-white">
+    <footer className="relative bg-[#050b18] border-t border-white/10 text-white overflow-hidden">
       {/* GLOW */}
-      <div className="absolute w-[400px] h-[400px] bg-cyan-500/10 blur-3xl rounded-full bottom-0 left-0" />
+      <div className="absolute w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-cyan-500/10 blur-3xl rounded-full bottom-0 left-[-100px]" />
 
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
         {/* BRAND */}

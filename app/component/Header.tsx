@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Activity, HeartPulse } from "lucide-react";
+import { Menu, X, HeartPulse } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -23,7 +23,7 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* LOGO */}
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -35,7 +35,7 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-          {["Home", "Features", "AI Engine", "Dashboard", "Contact"].map(
+          {["Home", "Features", "AI Engine", "Dashboard", "Pricing", "Contact"].map(
             (item, i) => (
               <Link
                 key={i}
@@ -69,7 +69,7 @@ export default function Header() {
           className="md:hidden bg-[#050b18]/90 backdrop-blur-xl border-t border-white/10 px-6 py-4"
         >
           <div className="flex flex-col gap-4 text-gray-300">
-            {["Home", "Features", "AI Engine", "Dashboard", "Contact"].map(
+            {["Home", "Features", "AI Engine", "Dashboard", "Pricing", "Contact"].map(
               (item, i) => (
                 <a
                   key={i}
