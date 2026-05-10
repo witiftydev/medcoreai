@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
+import ScrollToTop from "./component/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Healthcare Orchestrator",
+  title: "MediCore AI - Intelligent Healthcare Platform",
   description:
-    "A healthcare orchestrator built with Next.js, TypeScript, and Tailwind CSS.",
+    "AI-powered healthcare platform for smarter diagnosis, patient tracking, and hospital automation. Trusted by 10,000+ doctors worldwide.",
 };
 
 export default function RootLayout({
@@ -32,11 +33,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <Header />
-
-        {/* IMPORTANT WRAPPER */}
         <main className="flex-1 pt-16 overflow-x-hidden">{children}</main>
-
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
